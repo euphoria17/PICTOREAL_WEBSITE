@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Counter-part</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" rel ="stylesheet" type = "text/css"/>
+        <link rel="stylesheet" href = "bootstrap.min.css">
+        <link rel="stylesheet" href="/style3.css">
+        <link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2 class = "text-center"> Project Staticstics</h2>
+        <div class="project-counter-wrp">
+            <ul>
+                <li>
+                    <i class="fas fa-calendar"></i>
+                    <p id = "number1" class="number"> 25+</p>
+                    <span></span>
+                    <p>Years since inception</p>
+                </li>
+                <li>
+                    <i class="fas fa-paint-brush"></i>
+                    <p id = "number2" class="number"> 10+</p>
+                    <span></span>
+                    <p>Events Done</p>
+                </li>
+                <li>
+                    <i class="fas fa-people-group"></i>
+                    <p id = "number3" class="number"> 250+</p>
+                    <span></span>
+                    <p>Members</p>
+                </li>
+            </ul>
+        </div>
+       
+        <script>
+            var years = setInterval( yearscompleted , 30)
+            var events = setInterval(eventsdone , 30)
+            var Members = setInterval(Members , 30)
+            let count1 = 1;
+            let count2 = 1;
+            let count3 = 1;
+
+            function yearscompleted()
+            {
+                count1++;
+                document.querySelector("#number1").innerHTML =count1;
+
+                //stop at given condition
+                if(count1 == 25)
+                {
+                    clearInterval(years)
+                }
+            }
+            function eventsdone()
+            {
+                count2++;
+                document.querySelector("#number2").innerHTML =count1;
+
+                //stop at given condition
+                if(count2 == 10)
+                {
+                    clearInterval(events)
+                }
+            }
+            function Members()
+            {
+                count3++;
+                document.querySelector("#number3").innerHTML =count1;
+
+                //stop at given condition
+                if(count3 == 250)
+                {
+                    clearInterval(Members)
+                }
+            }
+        </script>
+    </body>
+</html>
