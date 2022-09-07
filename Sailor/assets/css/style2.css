@@ -1,25 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-body {
+.events {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: #bfd7f3;
 }
 
-.h1
-{
-    text-align: center;
-    
-}
-.container {
+.containerOfEvents {
 
     position: relative;
     width: 1100px;
@@ -28,10 +15,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
+    margin: 50px;
 
 }
 
- .container .card {
+ .containerOfEvents .card {
 
     position: relative;
     max-width: 300px;
@@ -50,11 +38,11 @@ body {
 
 } 
 
-.container .card:hover {
+.containerOfEvents .card:hover {
     height :420px;
 }
 
-.container .card .imgBx {
+.containerOfEvents .card .imgBx {
     position:relative;
     width: 260px;
     height: 260px;
@@ -65,12 +53,12 @@ body {
 
 }
 
-.container .card .imgBx .img{
+.containerOfEvents .card .imgBx .img{
     max-width: 50%;
     border-radius: 4px;
 } 
 
-.container .card .content 
+.containerOfEvents .card .content 
 {
     position: relative;
     margin-top: -140px;
@@ -82,7 +70,7 @@ body {
     transition: 0.3s ease-in-out; 
 } 
 
-.container .card:hover .content {
+.containerOfEvents .card:hover .content {
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
