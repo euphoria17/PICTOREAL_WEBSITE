@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+.phnx{
+  margin-left: 110px;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -64,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -76,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo {
   font-size: 28px;
   margin: 0;
+  margin-left: 15px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
@@ -85,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #556270;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 55px;
 }
 
 /*--------------------------------------------------------------
@@ -476,6 +481,7 @@ section {
   font-family: "Poppins", sans-serif;
   color: #556270;
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
