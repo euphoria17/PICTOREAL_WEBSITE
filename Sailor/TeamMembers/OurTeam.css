@@ -56,4 +56,10 @@
   .hide-sec-1{
     display: none;
   }
+
+  .imageclass
+  {
+    max-width: min-content;
+    
+  }
   
